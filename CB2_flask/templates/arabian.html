@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Description Layout</title>
+    <style>
+      body {
+        background-color: white;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      .nav-bar {
+        background-color: black;
+        padding: 15px;
+        text-align: center;
+      }
+      .dropdown {
+        padding: 8px;
+        border-radius: 5px;
+        border: none;
+        font-size: 16px;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 60px;
+        max-width: 1200px;
+        margin: auto;
+        margin-top: 20px;
+      }
+      .image-container {
+        /* flex: 1; */
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .image-container img {
+        width: 100%;
+        max-width: 600px;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+      }
+      .image-container:hover img {
+        transform: scale(1.05);
+      }
+      .form-container {
+        flex: 1;
+        text-align: left;
+        /* margin-left: 100px; */
+      }
+      .description-table {
+        width: 700px;
+        margin-top: 20px;
+        border-collapse: collapse;
+      }
+      .description-table th,
+      .description-table td {
+        border: 1px solid #000;
+        padding: 10px;
+        text-align: left;
+      }
+      .description-table th {
+        background-color: black;
+        color: white;
+      }
+      h2 {
+        color: black;
+      }
+      .book-btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background: orange;
+        color: white;
+        text-decoration: none;
+        font-size: 22px;
+        border-radius: 5px;
+        margin-top: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="nav-bar">
+      <select id="animal-select" class="dropdown">
+        <option value="" disabled selected>Pets</option>
+        <option value="dogs">Dogs</option>
+        <option value="cats">Cats</option>
+        <option value="horses">Horses</option>
+        <option value="birds">Birds</option>
+      </select>
+    </div> -->
+    <!-- <div class="image-container">
+      <img src="5insta.jpg" alt="Image" height="500px" />
+    </div> -->
+    <div class="container">
+      <div class="image-container">
+        <img src="/static/images/arabian.jpg" alt="Image" height="570px" width="500px" />
+        <h1 style="display: flex; justify-content: center; align-items: center">
+          SNOWBALL
+        </h1>
+      </div>
+
+      <div class="form-container">
+        <h2 style="text-align: center">Description</h2>
+        <table class="description-table">
+          <tr>
+            <th>Topic</th>
+            <th class="th1">Details</th>
+          </tr>
+          <tr>
+            <td>Name</td>
+            <td class="th1">Arabian Horse</td>
+          </tr>
+          <tr>
+            <td>Size</td>
+            <td>Height: 14.1–15.1 hands <br>
+               Weight: 800–1,000 lbs</td>
+          </tr>
+          <tr>
+            <td>Lifespan</td>
+            <td>25–30 years (some live longer with proper care))</td>
+          </tr>
+          <tr>
+            <td>Temperament</td>
+            <td>
+              Intelligent & Quick-Learning – Easily trainable, forms strong
+              bonds with owners <br />
+              Spirited & Energetic – Known for their endurance and high energy
+              <br />
+              Friendly & Loyal – Affectionate with humans but sensitive to
+              handling <br />
+              Alert & Curious – Always aware of surroundings, making them great
+              for competitions
+            </td>
+          </tr>
+          <tr>
+            <td>Color and Appearance</td>
+            <td>
+              Common Colors: Bay, Gray, Chestnut, Black, and Roan <br />
+              Distinctive Features: <br />
+              Dished (concave) face with large, expressive eyes <br />
+              Arching neck and high tail carriage <br />
+              Compact, muscular body built for endurance
+            </td>
+          </tr>
+          <tr>
+            <td>Child Friendly</td>
+            <td>
+              Yes, for experienced young riders – Their gentle side makes them
+              great companions, but their energy requires confident handling.
+            </td>
+          </tr>
+
+          <tr>
+            <td>Common Health Issues</td>
+            <td>
+              Colic & Digestive Issues – Due to their sensitive digestive system
+              <br />
+              Lameness & Leg Issues – Can develop joint problems if overworked
+              <br />
+              Genetic Disorders: Some bloodlines carry inherited conditions
+              (e.g., Severe Combined Immunodeficiency - SCID)
+
+              <tr>
+                <td>Trainability</td>
+                <td>
+                  Highly trainable – Excels in endurance riding, dressage,
+                  jumping, and racing <br />
+                  Responsive to voice and body cues – Forms deep connections
+                  with riders
+                </td>
+              </tr>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Overview</td>
+            <td>
+              The Arabian Horse is one of the oldest and most iconic horse
+              breeds, known for its speed, endurance, intelligence, and beauty.
+              Originally bred in the Middle East, they are used today in
+              endurance racing, equestrian sports, and pleasure riding. Their
+              loyal nature, adaptability, and striking looks make them a
+              favorite worldwide.
+            </td>
+          </tr>
+        </table>
+
+        <a href="#" class="book-btn">Adopt Now</a>
+      </div>
+    </div>
+  </body>
+</html>

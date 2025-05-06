@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Description Layout</title>
+    <style>
+      body {
+        background-color: white;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      .nav-bar {
+        background-color: black;
+        padding: 15px;
+        text-align: center;
+      }
+      .dropdown {
+        padding: 8px;
+        border-radius: 5px;
+        border: none;
+        font-size: 16px;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 60px;
+        max-width: 1200px;
+        margin: auto;
+        margin-top: 20px;
+      }
+      .image-container {
+        /* flex: 1; */
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .image-container img {
+        width: 100%;
+        max-width: 600px;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+      }
+      .image-container:hover img {
+        transform: scale(1.05);
+      }
+      .form-container {
+        flex: 1;
+        text-align: left;
+        /* margin-left: 100px; */
+      }
+      .description-table {
+        width: 700px;
+        margin-top: 20px;
+        border-collapse: collapse;
+      }
+      .description-table th,
+      .description-table td {
+        border: 1px solid #000;
+        padding: 10px;
+        text-align: left;
+      }
+      .description-table th {
+        background-color: black;
+        color: white;
+      }
+      h2 {
+        color: black;
+      }
+      .book-btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background: orange;
+        color: white;
+        text-decoration: none;
+        font-size: 22px;
+        border-radius: 5px;
+        margin-top: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="nav-bar">
+      <select id="animal-select" class="dropdown">
+        <option value="" disabled selected>Pets</option>
+        <option value="dogs">Dogs</option>
+        <option value="cats">Cats</option>
+        <option value="horses">Horses</option>
+        <option value="birds">Birds</option>
+      </select>
+    </div> -->
+    <!-- <div class="image-container">
+      <img src="5insta.jpg" alt="Image" height="500px" />
+    </div> -->
+    <div class="container">
+      <div class="image-container">
+        <img src="/static/images/kala khatta.jpg" alt="Image" height="510px" width="500px" />
+        <h1 style="display: flex; justify-content: center; align-items: center">
+          PONY
+        </h1>
+      </div>
+
+      <div class="form-container">
+        <h2 style="text-align: center">Description</h2>
+        <table class="description-table">
+          <tr>
+            <th>Topic</th>
+            <th class="th1">Details</th>
+          </tr>
+          <tr>
+            <td>Name</td>
+            <td class="th1">Fell Pony</td>
+          </tr>
+          <tr>
+            <td>Size</td>
+            <td>
+              Height: 13–14 hands (52–56 inches / 132–142 cm) <br />
+              Weight: 800–1,000 lbs (360–450 kg)
+            </td>
+          </tr>
+          <tr>
+            <td>Lifespan</td>
+            <td>25–30 years (with proper care)</td>
+          </tr>
+          <tr>
+            <td>Temperament</td>
+            <td>
+              Intelligent & Willing – Quick learners and eager to please <br />
+              Calm & Gentle – Well-mannered and easy to handle <br />
+              Hardy & Strong – Built for endurance and rough terrain <br />
+              Independent & Spirited – Can be stubborn but form strong bonds
+              with owners
+            </td>
+          </tr>
+          <tr>
+            <td>Color and Appearance</td>
+            <td>
+              Common Colors: Black, Brown, Bay, Gray <br />
+              Thick Mane & Tail – Helps protect them from harsh weather <br />
+              Compact, Muscular Build – Sturdy legs and strong hooves for tough
+              terrains
+            </td>
+          </tr>
+          <tr>
+            <td>Child Friendly</td>
+            <td>
+              Yes! Gentle and patient, making them great for children and
+              beginners
+            </td>
+          </tr>
+          <tr>
+            <td>Common Health Issues</td>
+            <td>
+              Laminitis – A hoof condition common in ponies with rich diets
+              <br />
+              Obesity – Prone to weight gain if overfed <br />
+              Sweet Itch – Skin irritation caused by insect bites
+
+              <tr>
+                <td>Trainability</td>
+                <td>
+                  Highly trainable – Excellent for riding, driving, and farm
+                  work <br />
+                  Versatile – Can excel in dressage, jumping, trekking, and
+                  endurance riding
+                </td>
+              </tr>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Overview</td>
+            <td>
+              The Fell Pony is a strong, versatile, and friendly breed
+              originating from northern England. Once used for pack work and
+              farming, it is now popular for riding, driving, and family
+              companionship. Their hardiness, intelligence, and gentle nature
+              make them a favorite among equestrians of all levels.
+            </td>
+          </tr>
+        </table>
+
+        <a href="#" class="book-btn">Adopt Now</a>
+      </div>
+    </div>
+  </body>
+</html>

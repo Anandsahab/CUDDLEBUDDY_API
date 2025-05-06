@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Description Layout</title>
+    <style>
+      body {
+        background-color: white;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      .nav-bar {
+        background-color: black;
+        padding: 15px;
+        text-align: center;
+      }
+      .dropdown {
+        padding: 8px;
+        border-radius: 5px;
+        border: none;
+        font-size: 16px;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 60px;
+        max-width: 1200px;
+        margin: auto;
+        margin-top: 20px;
+      }
+      .image-container {
+        /* flex: 1; */
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .image-container img {
+        width: 100%;
+        max-width: 600px;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+      }
+      .image-container:hover img {
+        transform: scale(1.05);
+      }
+      .form-container {
+        flex: 1;
+        text-align: left;
+        /* margin-left: 100px; */
+      }
+      .description-table {
+        width: 700px;
+        margin-top: 20px;
+        border-collapse: collapse;
+      }
+      .description-table th,
+      .description-table td {
+        border: 1px solid #000;
+        padding: 10px;
+        text-align: left;
+      }
+      .description-table th {
+        background-color: black;
+        color: white;
+      }
+      h2 {
+        color: black;
+      }
+      .book-btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background: orange;
+        color: white;
+        text-decoration: none;
+        font-size: 22px;
+        border-radius: 5px;
+        margin-top: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-container">
+        <img src="/static/images/dog3.jpg" alt="">
+        <h1 style="display: flex; justify-content: center; align-items: center">
+          BUFFY
+        </h1>
+      </div>
+
+      <div class="form-container">
+        <h2 style="text-align: center">Description</h2>
+        <table class="description-table">
+          <tr>
+            <th>Topic</th>
+            <th class="th1">Details</th>
+          </tr>
+          <tr>
+            <td>Name</td>
+            <td class="th1">Shih Tzu</td>
+          </tr>
+          <tr>
+            <td>Size</td>
+            <td>Small</td>
+          </tr>
+          <tr>
+            <td>Lifespan</td>
+            <td>10-16 years</td>
+          </tr>
+          <tr>
+            <td>Temperament</td>
+            <td>
+              Active <br />
+              Courageous <br />
+              Friendly <br />
+              Gentle <br />
+              Happy <br />
+              Intelligent <br />
+              Lively <br />
+              Outgoing <br />
+              Playful <br />
+            </td>
+          </tr>
+          <tr>
+            <td>Color and Appearance</td>
+            <td>
+              Black <br />
+              Blue <br />
+              Brindle <br />
+              Gold <br />
+
+              <tr>
+                <td>Child Friendly</td>
+                <td>
+                  This breed is also very friendly toward other pets and very
+                  friendly toward strangers.
+                </td>
+              </tr>
+            </td>
+          </tr>
+          <tr>
+            <td>Health and Survival Issues</td>
+            <td>
+              Hypoallergenic: Yes
+
+              <tr>
+                <td>Trainability</td>
+                <td>
+                  Moderately Easy Training: The Shih Tzu’s somewhat obstinate
+                  nature makes consistency essential in the training process.
+                  Patience is important as housebreaking may be difficult. The
+                  Shih Tzu should be taught from puppyhood to relax during the
+                  grooming process as it will be a constant throughout the Shih
+                  Tzu’s life.
+                </td>
+              </tr>
+            </td>
+          </tr>
+          <tr>
+            <td>Overview</td>
+            <td>
+              Compact, yet slightly longer than it is tall, the Shih Tzu hides a
+              sturdy body beneath its mantle of luxurious hair. It has a smooth,
+              effortless stride with good reach and drive. Even though its
+              function is that of companion, it should nonetheless be
+              structurally sound. Its expression is warm, sweet and wide-eyed,
+              imparting the impression of trust and friendliness. The long,
+              dense coat is double and fairly straight.
+            </td>
+          </tr>
+        </table>
+
+        <a href="" class="book-btn">Adopt Now</a>
+      </div>
+    </div>
+  </body>
+</html>

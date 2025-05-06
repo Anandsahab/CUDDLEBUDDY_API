@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Description Layout</title>
+    <style>
+      body {
+        background-color: white;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      .nav-bar {
+        background-color: black;
+        padding: 15px;
+        text-align: center;
+      }
+      .dropdown {
+        padding: 8px;
+        border-radius: 5px;
+        border: none;
+        font-size: 16px;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 60px;
+        max-width: 1200px;
+        margin: auto;
+        margin-top: 20px;
+      }
+      .image-container {
+        /* flex: 1; */
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .image-container img {
+        width: 100%; 
+        max-width: 600px; 
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+      }
+      .image-container:hover img {
+        transform: scale(1.05);
+      }
+      .form-container {
+        flex: 1;
+        text-align: left;
+        /* margin-left: 100px; */
+      }
+      .description-table {
+        width: 700px;
+        margin-top: 20px;
+        border-collapse: collapse;
+      }
+      .description-table th,
+      .description-table td {
+        border: 1px solid #000;
+        padding: 10px;
+        text-align: left;
+      }
+      .description-table th {
+        background-color: black;
+        color: white;
+      }
+      h2 {
+        color: black;
+      }
+      .book-btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background: orange;
+        color: white;
+        text-decoration: none;
+        font-size: 22px;
+        border-radius: 5px;
+        margin-top: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="image-container">
+        <img
+          src="/static/images/york.jpg"
+          alt="Image"
+          height="510px"
+          width="500px"
+        />
+        <h1 style="display: flex; justify-content: center; align-items: center">
+          HENLEY
+        </h1>
+      </div>
+
+      <div class="form-container">
+        <h2 style="text-align: center">Description</h2>
+        <table class="description-table">
+          <tr>
+            <th>Topic</th>
+            <th class="th1">Details</th>
+          </tr>
+          <tr>
+            <td>Name</td>
+            <td class="th1">York Chocolate (also called York or Yorkie Cat)</td>
+          </tr>
+          <tr>
+            <td>Size</td>
+            <td>
+              Medium to Large <br />
+              Weight: 10–16 lbs (4.5–7.2 kg) <br />
+              Length: 12–18 inches
+            </td>
+          </tr>
+          <tr>
+            <td>Lifespan</td>
+            <td>13-15 years</td>
+          </tr>
+          <tr>
+            <td>Temperament</td>
+            <td>
+              Affectionate & Loyal – Forms strong bonds with owners, loves
+              attention <br />
+              Playful & Energetic – Enjoys playing but also loves relaxing near
+              its owner <br />
+              Intelligent – Quick learners, interested in exploring their
+              surroundings <br />
+              Social – Friendly with family members but may be shy around
+              strangers <br />
+              Vocal & Expressive – Communicates with soft meows and purrs
+            </td>
+          </tr>
+          <tr>
+            <td>Color and Appearance</td>
+            <td>
+              Chocolate-brown or lavender-brown coat (rich, silky texture)
+              <br />
+              Semi-long fur (requires moderate grooming) <br />
+              Golden, green, or hazel eyes <br />
+
+              <tr>
+                <td>Child Friendly</td>
+                <td>
+                  York Chocolate cats are patient and playful, making them good
+                  family pets.
+                </td>
+              </tr>
+            </td>
+          </tr>
+          <tr>
+            <td>Health and Survival Issues</td>
+            <td>
+              Generally a healthy breed with no known major genetic disorders
+              <br />
+              Obesity can be a concern, so a balanced diet and exercise are
+              essential <br />
+              Regular dental care is recommended
+
+              <tr>
+                <td>Trainability</td>
+                <td>
+                  Highly trainable – Can learn commands, tricks, and even how to
+                  walk on a leash. They are intelligent and respond well to
+                  positive reinforcement.
+                </td>
+              </tr>
+            </td>
+          </tr>
+          <tr>
+            <td>Overview</td>
+            <td>
+              The York Chocolate is a rare and elegant cat breed known for its
+              rich brown coat, affectionate nature, and playful personality.
+              Originally bred in the 1980s in the U.S., this breed is now quite
+              rare. They make excellent pets for families and individuals who
+              want a loving, social, and intelligent cat.
+            </td>
+          </tr>
+        </table>
+
+        <a href="#" class="book-btn">Adopt Now</a>
+      </div>
+    </div>
+  </body>
+</html>

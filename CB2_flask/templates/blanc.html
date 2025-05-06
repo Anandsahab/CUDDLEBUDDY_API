@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Description Layout</title>
+    <style>
+      body {
+        background-color: white;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      .nav-bar {
+        background-color: black;
+        padding: 15px;
+        text-align: center;
+      }
+      .dropdown {
+        padding: 8px;
+        border-radius: 5px;
+        border: none;
+        font-size: 16px;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 60px;
+        max-width: 1200px;
+        margin: auto;
+        margin-top: 20px;
+      }
+      .image-container {
+        /* flex: 1; */
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .image-container img {
+        width: 100%;
+        max-width: 600px;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+      }
+      .image-container:hover img {
+        transform: scale(1.05);
+      }
+      .form-container {
+        flex: 1;
+        text-align: left;
+        /* margin-left: 100px; */
+      }
+      .description-table {
+        width: 700px;
+        margin-top: 20px;
+        border-collapse: collapse;
+      }
+      .description-table th,
+      .description-table td {
+        border: 1px solid #000;
+        padding: 10px;
+        text-align: left;
+      }
+      .description-table th {
+        background-color: black;
+        color: white;
+      }
+      h2 {
+        color: black;
+      }
+      .book-btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background: orange;
+        color: white;
+        text-decoration: none;
+        font-size: 22px;
+        border-radius: 5px;
+        margin-top: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="nav-bar">
+      <select id="animal-select" class="dropdown">
+        <option value="" disabled selected>Pets</option>
+        <option value="dogs">Dogs</option>
+        <option value="cats">Cats</option>
+        <option value="horses">Horses</option>
+        <option value="birds">Birds</option>
+      </select>
+    </div> -->
+    <!-- <div class="image-container">
+      <img src="5insta.jpg" alt="Image" height="500px" />
+    </div> -->
+    <div class="container">
+      <div class="image-container">
+        <img src="/static/images/blanc.jpg" alt="Image" height="570px" width="500px" />
+        <h1 style="display: flex; justify-content: center; align-items: center">
+          MUFFIN
+        </h1>
+      </div>
+
+      <div class="form-container">
+        <h2 style="text-align: center">Description</h2>
+        <table class="description-table">
+          <tr>
+            <th>Topic</th>
+            <th class="th1">Details</th>
+          </tr>
+          <tr>
+            <td>Name</td>
+            <td class="th1">Blanc de Hotot Rabbit</td>
+          </tr>
+          <tr>
+            <td>Size</td>
+            <td>
+              Medium to Large <br />
+
+              Weight: 8–11 lbs (3.6–5 kg)
+            </td>
+          </tr>
+          <tr>
+            <td>Lifespan</td>
+            <td>7-10 years (with proper care)</td>
+          </tr>
+          <tr>
+            <td>Temperament</td>
+            <td>
+              Gentle & Friendly – Enjoys human interaction and being handled
+              <br />
+              Calm & Affectionate – Makes a great companion for families <br />
+              Curious & Playful – Loves to explore and play with toys <br />
+              Sociable but Reserved – Bonds well with owners but may be shy at
+              first
+            </td>
+          </tr>
+          <tr>
+            <td>Color and Appearance</td>
+            <td>
+              Pure white fur with distinct black rings around the eyes, giving a
+              “mascara” effect <br />
+              Dense, soft coat that requires regular grooming <br />
+              Compact, well-muscled body with upright ears
+            </td>
+          </tr>
+          <tr>
+            <td>Child Friendly</td>
+            <td>
+              Yes, with supervision! They are gentle and affectionate, making
+              them great for families, but young kids should be taught to handle
+              them carefully.
+            </td>
+          </tr>
+
+          <tr>
+            <td>Common Health Issues</td>
+            <td>
+              Overgrown Teeth – Needs plenty of hay and chew toys <br />
+              GI Stasis – A serious digestive issue if they stop eating <br />
+              Obesity – Needs a proper diet and exercise to stay healthy <br />
+              Eye Infections – Due to their distinctive eye markings, they may
+              be more prone to irritation
+
+              <tr>
+                <td>Trainability</td>
+                <td>
+                  Highly trainable – Can learn to use a litter box, respond to
+                  their name, and perform simple tricks with positive
+                  reinforcement.
+                </td>
+              </tr>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Overview</td>
+            <td>
+              The Blanc de Hotot is a beautiful, affectionate rabbit breed known
+              for its unique eye markings, friendly nature, and calm
+              personality. Originally bred in France, they make great pets for
+              families and individuals. With proper care, space to hop around,
+              and a balanced diet, they can be loving, long-term companions.
+            </td>
+          </tr>
+        </table>
+
+        <a href="#" class="book-btn">Adopt Now</a>
+      </div>
+    </div>
+  </body>
+</html>

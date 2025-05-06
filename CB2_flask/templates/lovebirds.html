@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Description Layout</title>
+    <style>
+      body {
+        background-color: white;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      .nav-bar {
+        background-color: black;
+        padding: 15px;
+        text-align: center;
+      }
+      .dropdown {
+        padding: 8px;
+        border-radius: 5px;
+        border: none;
+        font-size: 16px;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 60px;
+        max-width: 1200px;
+        margin: auto;
+        margin-top: 20px;
+      }
+      .image-container {
+        /* flex: 1; */
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .image-container img {
+        width: 100%;
+        max-width: 600px;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+      }
+      .image-container:hover img {
+        transform: scale(1.05);
+      }
+      .form-container {
+        flex: 1;
+        text-align: left;
+        /* margin-left: 100px; */
+      }
+      .description-table {
+        width: 700px;
+        margin-top: 20px;
+        border-collapse: collapse;
+      }
+      .description-table th,
+      .description-table td {
+        border: 1px solid #000;
+        padding: 10px;
+        text-align: left;
+      }
+      .description-table th {
+        background-color: black;
+        color: white;
+      }
+      h2 {
+        color: black;
+      }
+      .book-btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background: orange;
+        color: white;
+        text-decoration: none;
+        font-size: 22px;
+        border-radius: 5px;
+        margin-top: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="nav-bar">
+      <select id="animal-select" class="dropdown">
+        <option value="" disabled selected>Pets</option>
+        <option value="dogs">Dogs</option>
+        <option value="cats">Cats</option>
+        <option value="horses">Horses</option>
+        <option value="birds">Birds</option>
+      </select>
+    </div> -->
+    <!-- <div class="image-container">
+      <img src="5insta.jpg" alt="Image" height="500px" />
+    </div> -->
+    <div class="container">
+      <div class="image-container">
+        <img src="/static/images/lb.jpg" alt="Image" height="570px" width="500px"/>
+        <h1 style="display: flex; justify-content: center; align-items: center;">LOVE BIRDS</h1>
+      </div>
+
+      <div class="form-container">
+        <h2 style="text-align: center">Description</h2>
+        <table class="description-table">
+          <tr>
+            <th>Topic</th>
+            <th class="th1">Details</th>
+          </tr>
+          <tr>
+            <td>Name</td>
+            <td class="th1">Agapornis (commonly known as Lovebirds)
+            </td>
+          </tr>
+          <tr>
+            <td>Size</td>
+            <td>
+                Small-sized parrot <br>
+                Length: 5–7 inches (12–17 cm) <br>
+                Weight: 40–60 grams
+
+
+            </td>
+          </tr>
+          <tr>
+            <td>Lifespan</td>
+            <td>10-15 years (some can live up to 20 years with proper care)
+            </td>
+          </tr>
+          <tr>
+            <td>Temperament</td>
+            <td>
+                Affectionate – Lovebirds form strong bonds with their partners or owners <br>
+                Social & Playful – Enjoy interactive play and require attention <br>
+                Curious & Energetic – Love exploring their surroundings <br>
+                Territorial & Can Be Nippy – May show aggression if not properly socialized
+
+            </td>
+          </tr>
+          <tr>
+            <td>Color and Appearance</td>
+            <td>
+                Vibrant plumage in green, yellow, blue, orange, and red shades <br>
+                Most common colors: <br>
+                Peach-Faced Lovebird – Green body, peach or orange face <br>
+                Fischer’s Lovebird – Green body, bright orange-red face <br>
+                Masked Lovebird – Green body, black face, yellow chest
+                
+            <tr>
+                <td>Child Friendly</td>
+                <td> Lovebirds can be good pets for older children but may bite if not handled gently.
+                </td>
+            </tr>
+             	
+            </td>
+          </tr>
+          <tr>
+            <td>Health and Survival Issues</td>
+            <td>
+                Obesity – Needs a balanced diet to avoid weight gain <br>
+                Feather Plucking – Caused by stress, boredom, or poor diet  <br>
+                Respiratory Infections – Due to cold drafts or dirty cages <br>
+                Psittacine Beak and Feather Disease (PBFD) – A viral infection affecting feathers and immune system
+
+
+              <tr>
+                <td>Trainability</td>
+                <td>
+                    Highly trainable – Can learn basic tricks and even play games <br>
+                    Limited talking ability – Unlike larger parrots, lovebirds do not mimic human speech well
+                    
+
+
+                </td>
+              </tr>
+            </td>
+          </tr>
+          <tr>
+            <td>Overview</td>
+            <td>
+                Lovebirds (Agapornis) are small, affectionate parrots that make great companions. They thrive in pairs but can bond with humans if given enough attention. Their playful, energetic nature makes them fun pets, but they require mental stimulation and social interaction. With proper care, a lovebird can be a loyal and loving pet for many years
+
+
+
+
+            </td>
+          </tr>
+        </table>
+
+        <a href="#" class="book-btn">Adopt Now</a>
+      </div>
+    </div>
+  </body>
+</html>

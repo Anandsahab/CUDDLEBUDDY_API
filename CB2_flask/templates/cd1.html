@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cuddle Buddy</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Monoton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Miss+Fajardose&display=swap"
+      rel="stylesheet"
+    />
+
+    
+    <link rel="stylesheet" href="/static/css/open-iconic-bootstrap.min.css">
+    
+    <link rel="stylesheet" href="/static/css/animate.css">
+
+    
+    <link rel="stylesheet" href="/static/css/owl.carousel.min.css">
+    
+    <link rel="stylesheet" href="/static/css/owl.theme.default.min.css">
+    
+    <link rel="stylesheet" href="/static/css/magnific-popup.css">
+
+    
+    <link rel="stylesheet" href="/static/css/aos.css">
+
+    
+    <link rel="stylesheet" href="/static/css/ionicons.min.css">
+
+    
+    <link rel="stylesheet" href="/static/css/bootstrap-datepicker.css">
+    
+    <link rel="stylesheet" href="/static/css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="/static/css/flaticon.css">
+    
+    <link rel="stylesheet" href="/static/css/icomoon.css">
+    
+    <link rel="stylesheet" href="/static/css/style.css">
+  </head>
+  <body>
+    {% extends 'base.html' %}
+    {% block content %}
+    <section
+      class="hero-wrap hero-wrap-2"
+      style="background-image: url('/static/images/c.jpg')"
+      data-stellar-background-ratio="0.5"
+    >
+      <div class="overlay"></div>
+      <div class="container">
+        <div
+          class="row no-gutters slider-text align-items-end justify-content-center"
+        >
+          <div class="col-md-9 ftco-animate text-center">
+            <h1 class="mb-2 bread">CATS</h1>
+            <p class="breadcrumbs">
+              <span class="mr-2"
+                ><a href="{{ url_for('index') }}"
+                  >Home <i class="ion-ios-arrow-forward"></i></a
+              ></span>
+              <span><a href="pets.html"></a> Pets <i class="ion-ios-arrow-forward"></i></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 ftco-animate">
+            <div class="blog-entry">
+              <a
+                href="{{ url_for('burmila' ) }}"
+                class="block-20"
+                style="background-image: url('/static/images/birmila.jpg')"
+              >
+              </a>
+              <div class="text pt-3 pb-4">
+                <div class="meta">
+                  <div><a href="{{ url_for('burmila' ) }}">SOPHIE</a></div>
+                  <!-- <div><a href="#">Shih-Tzu </a></div> -->
+                </div>
+                <h3 class="heading">
+                  <a href="{{ url_for('burmila' ) }}" style="text-decoration: underline orange;">BURMILA</a>
+                  <h6>The Burmilla is a rare and beautiful cat breed known for its sweet personality, playful energy, and.....</h6>
+                </h3>
+                <p class="clearfix">
+                  <a
+                    href="https://en.wikipedia.org/wiki/Burmilla"
+                    class="float-left read"
+                    >Read more</a
+                  >
+                  <a href="#" class="float-right meta-chat"
+                    ><span class="icon-chat"></span>50+</a>
+                  
+                  <div class="col-md-12 mt-3">
+                      <div class="form-group">
+                        <a href="{{url_for('booking')}}"> <input type="submit" value="Adopt Now" class="btn btn-primary py-2 px-5">
+                      </div>
+                    </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="blog-entry">
+              <a
+                href="{{ url_for('birman' ) }}"
+                class="block-20"
+                style="background-image: url(/static/images/birman.jpg);"
+              >
+              </a>
+              <div class="text pt-3 pb-4">
+                <div class="meta">
+                  <div><a href="{{ url_for('birman' ) }}">Whiskey</a></div>
+                  <!-- <div><a href="#">By Dr.John</a></div> -->
+                </div>
+                <h3 class="heading"><a href="{{ url_for('birman' ) }}" style="text-decoration: underline orange;">BIRMAN</a></h3>
+                <h6>The Birman cat is a loving, gentle, and friendly breed that thrives on companionship. They are....</h6>
+                <p class="clearfix">
+                  <a href="https://en.wikipedia.org/wiki/Birman#Famous_Birman_cats" class="float-left read">Read More</a>
+                  <a href="#" class="float-right meta-chat"
+                    ><span class="icon-chat"></span>200+</a>
+
+                    <div class="col-md-12 mt-3">
+                      <div class="form-group">
+                        <a href="{{url_for('booking')}}"> <input type="submit" value="Adopt Now" class="btn btn-primary py-2 px-5">
+                      </div>
+                    </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="blog-entry">
+              <a
+                href="{{ url_for('york' ) }}"
+                class="block-20"
+                style="background-image: url('/static/images/york.jpg')"
+              >
+              </a>
+              <div class="text pt-3 pb-4">
+                <div class="meta">
+                  <div><a href="{{ url_for('york' ) }}">HENLEY</a></div>
+                  <!-- <div><a href="#"> </a></div> -->
+                </div>
+                <h3 class="heading"><a href="{{ url_for('york' ) }}" style="text-decoration: underline orange;">York Chocolate</a></h3>
+                <h6>The York Chocolate is a rare and elegant cat breed known for its rich brown coat, affectionate nature, and.....</h6>
+                <p class="clearfix">
+                  <a href="https://en.wikipedia.org/wiki/York_Chocolate" class="float-left read">Read more</a>
+                  <a href="#" class="float-right meta-chat"
+                    ><span class="icon-chat"></span>40+</a>
+                  
+                    <div class="col-md-12 mt-3">
+                      <div class="form-group">
+                        <a href="{{url_for('booking')}}"> <input type="submit" value="Adopt Now" class="btn btn-primary py-2 px-5">
+                      </div>
+                    </div>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {% endblock %}
+      <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen">
+      <svg class="circular" width="48px" height="48px">
+        <circle
+          class="path-bg"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke="#eeeeee"
+        />
+        <circle
+          class="path"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke-miterlimit="10"
+          stroke="#F96D00"
+        />
+      </svg>
+    </div>
+
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="/static/js/popper.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/jquery.easing.1.3.js"></script>
+    <script src="/static/js/jquery.waypoints.min.js"></script>
+    <script src="/static/js/jquery.stellar.min.js"></script>
+    <script src="/static/js/owl.carousel.min.js"></script>
+    <script src="/static/js/jquery.magnific-popup.min.js"></script>
+    <script src="/static/js/aos.js"></script>
+    <script src="/static/js/jquery.animateNumber.min.js"></script>
+    <script src="/static/js/bootstrap-datepicker.js"></script>
+    <script src="/static/js/jquery.timepicker.min.js"></script>
+    <script src="/static/js/scrollax.min.js"></script>
+    <script src="/static/https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="/static/js/google-map.js"></script>
+    <script src="/static/js/main.js"></script>
+  </body>
+</html>

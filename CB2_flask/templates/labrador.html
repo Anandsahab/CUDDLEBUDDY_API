@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Description Layout</title>
+    <style>
+      body {
+        background-color: white;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      .nav-bar {
+        background-color: black;
+        padding: 15px;
+        text-align: center;
+      }
+      .dropdown {
+        padding: 8px;
+        border-radius: 5px;
+        border: none;
+        font-size: 16px;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 60px;
+        max-width: 1200px;
+        margin: auto;
+        margin-top: 20px;
+      }
+      .image-container {
+        /* flex: 1; */
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .image-container img {
+        width: 100%;
+        max-width: 600px;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+      }
+      .image-container:hover img {
+        transform: scale(1.05);
+      }
+      .form-container {
+        flex: 1;
+        text-align: left;
+        /* margin-left: 100px; */
+      }
+      .description-table {
+        width: 700px;
+        margin-top: 20px;
+        border-collapse: collapse;
+      }
+      .description-table th,
+      .description-table td {
+        border: 1px solid #000;
+        padding: 10px;
+        text-align: left;
+      }
+      .description-table th {
+        background-color: black;
+        color: white;
+      }
+      h2 {
+        color: black;
+      }
+      .book-btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background: orange;
+        color: white;
+        text-decoration: none;
+        font-size: 22px;
+        border-radius: 5px;
+        margin-top: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+ 
+    <div class="container">
+      <div class="image-container">
+        <img src="/static/images/dog1.jpg" alt="Image" height="570px" width="500px" />
+        <h1 style="display: flex; justify-content: center; align-items: center">
+          MAX
+        </h1>
+      </div>
+
+      <div class="form-container">
+        <h2 style="text-align: center">Description</h2>
+        <table class="description-table">
+          <tr>
+            <th>Topic</th>
+            <th class="th1">Details</th>
+          </tr>
+          <tr>
+            <td>Name</td>
+            <td class="th1">LABRADOR</td>
+          </tr>
+          <tr>
+            <td>Size</td>
+            <td>Medium to Large</td>
+          </tr>
+          <tr>
+            <td>Lifespan</td>
+            <td>10-12 years</td>
+          </tr>
+          <tr>
+            <td>Temperament</td>
+            <td>
+              Confident <br />
+              Friendly <br />
+              Intelligent <br />
+              Kind <br />
+              Reliable <br />
+              Trustworthy <br />
+            </td>
+          </tr>
+          <tr>
+            <td>Color and Appearance</td>
+            <td>
+              Golden <br />
+              Dark Golden <br />
+              Light Golden <br />
+              <tr>
+                <td>Child Friendly</td>
+                <td>
+                  Good with Kids: This is a suitable breed for kids and is known
+                  to be playful, energetic, and affectionate around them.
+                </td>
+              </tr>
+            </td>
+          </tr>
+          <tr>
+            <td>Health and Survival Issues</td>
+            <td>
+              Hypoallergenic: No
+
+              <tr>
+                <td>Trainability</td>
+                <td>
+                  Easy Training: The Golden Retriever is particularly easy to
+                  train. They are very sensitive to harsh treatment, so
+                  excessive strictness is not recommended. They learn very
+                  quickly and are extremely adaptable, making them perfect for
+                  therapy or service jobs. Golden Retrievers can learn many
+                  tricks and will remember what they are taught for the rest of
+                  their lives. Obedience classes are recommended.
+                </td>
+              </tr>
+            </td>
+          </tr>
+          <tr>
+            <td>Overview</td>
+            <td>
+              The Golden Retriever is a medium-sized to large, well-balanced dog
+              with a distinctive golden-colored coat; small, drop ears; and a
+              natural tail carried level with the back or with a slight upward
+              curve. The Golden Retriever is a powerfully built dog, with a good
+              nose for tracking, a soft mouth, and an eagerness to learn.
+            </td>
+          </tr>
+        </table>
+
+        <a href="#" class="book-btn">Adopt Now</a>
+      </div>
+    </div>
+  </body>
+</html>

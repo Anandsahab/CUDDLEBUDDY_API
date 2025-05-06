@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Cuddle Buddy</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Miss+Fajardose&display=swap" rel="stylesheet">
+
+	<!-- <link rel="stylesheet" href="./static/css/open-iconic-bootstrap.min.css"> -->
+	<link rel="stylesheet" href="./static/css/open-iconic-bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="css/animate.css"> -->
+	<link rel="stylesheet" href="./static/css/animate.css">
+
+	<!-- <link rel="stylesheet" href="css/owl.carousel.min.css"> -->
+	<link rel="stylesheet" href="./static/css/owl.carousel.min.css">
+	<!-- <link rel="stylesheet" href="css/owl.theme.default.min.css"> -->
+	<link rel="stylesheet" href="./static/css/owl.theme.default.min.css">
+	<!-- <link rel="stylesheet" href="css/magnific-popup.css"> -->
+	<link rel="stylesheet" href="./static/css/magnific-popup.css">
+
+	<!-- <link rel="stylesheet" href="css/aos.css"> -->
+	<link rel="stylesheet" href="./static/css/aos.css">
+
+	<!-- <link rel="stylesheet" href="css/ionicons.min.css"> -->
+	<link rel="stylesheet" href="./static/css/ionicons.min.css">
+
+	<!-- <link rel="stylesheet" href="css/bootstrap-datepicker.css"> -->
+	<link rel="stylesheet" href="./static/css/bootstrap-datepicker.css">
+	<!-- <link rel="stylesheet" href="css/jquery.timepicker.css"> -->
+	<link rel="stylesheet" href="./static/css/jquery.timepicker.css">
+
+
+	<!-- <link rel="stylesheet" href="css/flaticon.css"> -->
+	<link rel="stylesheet" href="./static/css/flaticon.css">
+	<!-- <link rel="stylesheet" href="css/icomoon.css"> -->
+	<link rel="stylesheet" href="./static/css/icomoon.css">
+	<!-- <link rel="stylesheet" href="css/style.css"> -->
+	<link rel="stylesheet" href="./static/css/style.css">
+	<link rel="icon" href="/static/images/lgo.png" type="image/png">
+
+	
+</head>
+
+<body>
+	
+	{% extends 'base.html' %}
+
+
+	{% block content %}
+	<section class="home-slider owl-carousel js-fullheight">
+		<div class="slider-item js-fullheight" style="background-image: url(/static/images/dog1.jpg);">
+
+			<div class="overlay"></div >
+			<div class="container">
+				<div class="row slider-text js-fullheight justify-content-center align-items-center"
+					data-scrollax-parent="true" >
+
+					<div class="col-md-12 col-sm-12 text-center ftco-animate">
+						<h1 class="mb-4 mt-5">Cuddle Buddy</h1>
+						<p><a href="{{ url_for('about' ) }}" class="btn btn-primary p-3 px-xl-4 py-xl-3">About Us</a> <a href="{{ url_for('blog' ) }}"
+								class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Blog</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="slider-item js-fullheight" style="background-image: url(/static/images/dog1.jpg);">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row slider-text js-fullheight justify-content-center align-items-center"
+					data-scrollax-parent="true">
+
+					<div class="col-md-12 col-sm-12 text-center ftco-animate">
+						<h1 class="mb-4 mt-5">Pet Love Awaitss</h1>
+						<p><a href="{{ url_for('about' ) }}" class="btn btn-primary p-3 px-xl-4 py-xl-3">About Us</a> <a href="{{ url_for('blog' ) }}"
+								 class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Blog</a></p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="slider-item js-fullheight" style="background-image: url(/static/images/dog1.jpg);">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+
+					<div class="col-md-12 col-sm-12 text-center ftco-animate">
+						<h1 class="mb-4 mt-5">Get your furry friend today..</h1>
+						<p><a href="{{ url_for('about' ) }}" class="btn btn-primary p-3 px-xl-4 py-xl-3">About Us</a> <a href="{{ url_for('blog' ) }}"
+								class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Blog</a></p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="ftco-section ftco-wrap-about ftco-no-pb">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-sm-10 wrap-about ftco-animate text-center">
+					<div class="heading-section mb-4 text-center">
+						<span class="subheading">About</span>
+						<h2 class="mb-4">Cuddle <span>Buddy</span>
+						</h2>
+					</div>
+					<p>Welcome to Cuddle Buddy, where our mission is to connect loving homes with adorable pets in need
+						of a forever family. We believe that every animal deserves a chance at a happy life, and our
+						platform is designed to make the adoption process as seamless and joyful as possible. At Cuddle
+						Buddy, you can explore a diverse selection of furry friends, from playful puppies to gentle
+						senior cats, each with their own unique story waiting to be shared</p>
+
+					<!-- <div class="video justify-content-center">
+					 <a href="https://vimeo.com/45830194" class="icon-video popup-vimeo d-flex justify-content-center align-items-center"> 
+					<span class="ion-ios-play"></span> -->
+					</a>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+
+
+	<section class="ftco-section ftco-counter img" id="section-counter"
+		style="background-image: url(/static/images/ba.jpg); " data-stellar-background-ratio="0.1">
+		<!-- <section class="ftco-section ftco-counter img ftco-no-pt" id="section-counter"> -->
+		<div class="container">
+			<div class="row d-md-flex align-items-center justify-content-center">
+				<div class="col-lg-10">
+					<div class="row d-md-flex align-items-center">
+						<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+							<div class="block-18">
+								<div class="text">
+									<strong class="number" data-number="18">0</strong>
+									<span>Months of Experienced</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+							<div class="block-18">
+								<div class="text">
+									<strong class="number" data-number="10000">0</strong>
+									<span>Happy Customers</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+							<div class="block-18">
+								<div class="text">
+									<strong class="number" data-number="50">0</strong>
+									<span>Branches</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+							<div class="block-18">
+								<div class="text">
+									<strong class="number" data-number="20">0</strong>
+									<span>Vet</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="ftco-section">
+		<div class="container-fluid px-4">
+			<div class="row justify-content-center mb-5 pb-2">
+				<div class="col-md-7 text-center heading-section ftco-animate">
+					<span class="subheading">Specialties</span>
+					<h2 class="mb-4">Pet Listings</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-lg-4 menu-wrap">
+					<div class="heading-menu text-center ftco-animate">
+						<h3>Dogs</h3>
+					</div>
+					<div class="menus d-flex ftco-animate" >
+						<div class="menu-img img" style="background-image: url(/static/images/dog3.jpg);"></div>
+						<div class="text">
+							<div class="d-flex">
+								<div class="one-half">
+									<h3>BUFFY</h3>
+								</div>
+								<div class="one-forth">
+									<span class="price"></span>
+								</div>
+							</div>
+							<p style="text-decoration: underline orange;">
+								<span>S</span><span>H</span><span>I</span><span>H</span><span>
+									T</span><span>Z</span><span>U</span></p>
+						</div>
+					</div>
+					<div class="menus d-flex ftco-animate">
+						<div class="menu-img img" style="background-image: url(/static/images/dog1.jpg);"></div>
+						<div class="text">
+							<div class="d-flex">
+								<div class="one-half">
+									<h3>MAX</h3>
+								</div>
+								<div class="one-forth">
+									<span class="price"></span>
+								</div>
+							</div>
+							<p style="text-decoration: underline orange;">
+								<span>L</span><span>A</span><span>B</span><span>R</span><span>A</span><span>D</span><span>O</span><span>R</span>
+							</p>
+						</div>
+					</div>
+					<div class="menus d-flex ftco-animate">
+						<div class="menu-img img" style="background-image: url(/static/images/dog2.jpg);"></div>
+						<div class="text">
+							<div class="d-flex">
+								<div class="one-half">
+									<h3>BELLA</h3>
+								</div>
+								<div class="one-forth">
+									<span class="price"></span>
+								</div>
+							</div>
+							<p style="text-decoration: underline orange;">
+								<span>M</span><span>A</span><span>L</span><span>T</span><span>E</span><span>S</span><span>E</span>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 col-lg-4 menu-wrap">
+					<div class="heading-menu text-center ftco-animate">
+						<h3>Cats</h3>
+					</div>
+					<div class="menus d-flex ftco-animate">
+						<div class="menu-img img" style="background-image: url(/static/images/birman.jpg);"></div>
+						<div class="text">
+							<div class="d-flex">
+								<div class="one-half">
+									<h3>WHISKEY</h3>
+								</div>
+								<div class="one-forth">
+									<span class="price"></span>
+								</div>
+							</div>
+							<p style="text-decoration: underline orange;">
+								<span>B</span><span>I</span><span>R</span><span>M</span><span>A</span><span>N</span></p>
+						</div>
+					</div>
+					<div class="menus d-flex ftco-animate">
+						<div class="menu-img img" style="background-image: url(/static/images/york.jpg);"></div>
+						<div class="text">
+							<div class="d-flex">
+								<div class="one-half">
+									<h3>HENLEY</h3>
+								</div>
+								<div class="one-forth">
+									<span class="price"> </span>
+								</div>
+							</div>
+							<p style="text-decoration: underline orange;">
+								<span>Y</span><span>O</span><span>R</span><span>K</span>
+								<span>C</span><span>H</span><span>O</span>C<span>O</span>L<span>A</span><span>T</span><span>E</span>
+							</p>
+						</div>
+					</div>
+					<div class="menus d-flex ftco-animate">
+						<div class="menu-img img" style="background-image: url(/static/images/burmila.jpg);"></div>
+						<div class="text">
+							<div class="d-flex">
+								<div class="one-half">
+									<h3>SOPHIE</h3>
+								</div>
+								<div class="one-forth">
+									<span class="price"></span>
+								</div>
+							</div>
+							<p style="text-decoration: underline orange;">
+								<span>B</span><span>U</span><span>R</span><span>M</span><span>I</span><span>L</span><span>A</span>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 col-lg-4 menu-wrap">
+					<div class="heading-menu text-center ftco-animate">
+						<h3>Birds</h3>
+					</div>
+					<div class="menus d-flex ftco-animate">
+						<div class="menu-img img" style="background-image: url(/static/images/hawks.jpg);"></div>
+						<div class="text">
+							<div class="d-flex">
+								<div class="one-half">
+									<h3>SKITTLES</h3>
+								</div>
+								<div class="one-forth">
+									<span class="price"></span>
+								</div>
+							</div>
+							<p style="text-decoration: underline orange;">
+								<span>H</span><span>A</span><span>W</span><span>K</span><span>S</span></p>
+						</div>
+					</div>
+					<div class="menus d-flex ftco-animate">
+						<div class="menu-img img" style="background-image: url(/static/images/owl.jpg);"></div>
+						<div class="text">
+							<div class="d-flex">
+								<div class="one-half">
+									<h3>COOPER</h3>
+								</div>
+								<div class="one-forth">
+									<span class="price"></span>
+								</div>
+							</div>
+							<p style="text-decoration: underline orange;"><span>O</span><span>W</span><span>L</span></p>
+						</div>
+					</div>
+					<div class="menus d-flex ftco-animate">
+						<div class="menu-img img" style="background-image: url(/static/images/ove.jpg);"></div>
+						<div class="text">
+							<div class="d-flex">
+								<div class="one-half">
+									<h3>LOVE BIRDS</h3>
+								</div>
+								<div class="one-forth">
+									<span class="price"></span>
+								</div>
+							</div>
+							<p style="text-decoration: underline orange;">
+								<span>A</span><span>G</span>A<span>P</span><span>O</span><span>R</span><span>N</span><span>I</span><span>S</span>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<!--  -->
+				<div class="col-md-6 col-lg-4 menu-wrap">
+					<div class="heading-menu text-center ftco-animate">
+						<h3>Fishes</h3>
+					</div>
+					<div class="menus d-flex ftco-animate">
+						<div class="menu-img img" style="background-image: url(/static/images/fush1.jpg);"></div>
+						<div class="text">
+							<div class="d-flex">
+								<div class="one-half">
+									<h3>NEMO</h3>
+								</div>
+								<div class="one-forth">
+									<span class="price"></span>
+								</div>
+							</div>
+							<p style="text-decoration: underline orange;">
+								<span>S</span><span>P</span><span>L</span><span>I</span><span>T</span><span>F</span><span>I</span><span>N</span>
+							</p>
+						</div>
+					</div>
+					<div class="menus d-flex ftco-animate">
+						<div class="menu-img img" style="background-image: url(/static/images/fish2.jpg);"></div>
+						<div class="text">
+							<div class="d-flex">
+								<div class="one-half">
+									<h3>CICI</h3>
+								</div>
+								<div class="one-forth">
+									<span class="price"></span>
+								</div>
+							</div>
+							<p style="text-decoration: underline orange;">
+								<span>C</span><span>I</span><span>C</span><span>H</span><span>L</span><span>I</span><span>D</span><span>S</span>
+							</p>
+						</div>
+					</div>
+					<div class="menus d-flex ftco-animate">
+						<div class="menu-img img" style="background-image: url(/static/images/butterfly.jpg);"></div>
+						<div class="text">
+							<div class="d-flex">
+								<div class="one-half">
+									<h3>DORY</h3>
+								</div>
+								<div class="one-forth">
+									<span class="price"></span>
+								</div>
+							</div>
+							<p style="text-decoration: underline orange;">
+								<span>B</span><span>U</span><span>T</span><span>T</span><span>E</span><span>R</span><span>F</span><span>L</span><span>Y</span>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 col-lg-4 menu-wrap">
+					<div class="heading-menu text-center ftco-animate">
+						<h3>Rabbits</h3>
+					</div>
+					<div class="menus d-flex ftco-animate">
+						<div class="menu-img img" style="background-image: url(/static/images/blanc.jpg);"></div>
+						<div class="text">
+							<div class="d-flex">
+								<div class="one-half">
+									<h3>MUFFIN</h3>
+								</div>
+								<div class="one-forth">
+									<span class="price"></span>
+								</div>
+							</div>
+							<p style="text-decoration: underline orange;">
+								<span>B</span><span>L</span><span>A</span><span>N</span><span>C</span>
+								<span>D</span><span>E</span>
+								<span>H</span><span>O</span><span>T</span><span>O</span><span>T</span></p>
+						</div>
+					</div>
+					<div class="menus d-flex ftco-animate">
+						<div class="menu-img img" style="background-image: url(/static/images/oreo.jpg);"></div>
+						<div class="text">
+							<div class="d-flex">
+								<div class="one-half">
+									<h3>OREO</h3>
+								</div>
+								<div class="one-forth">
+									<span class="price"></span>
+								</div>
+							</div>
+							<p style="text-decoration: underline orange;">
+								<span>D</span><span>U</span><span>T</span><span>C</span><span>H</span></p>
+						</div>
+					</div>
+					<div class="menus d-flex ftco-animate">
+						<div class="menu-img img" style="background-image: url(/static/images/f1.jpg);"></div>
+						<div class="text">
+							<div class="d-flex">
+								<div class="one-half">
+									<h3>SMOKEY</h3>
+								</div>
+								<div class="one-forth">
+									<span class="price"></span>
+								</div>
+							</div>
+							<p style="text-decoration: underline orange;">
+								<span>S</span><span>A</span><span>T</span><span>I</span><span>N</span></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 col-lg-4 menu-wrap">
+					<div class="heading-menu text-center ftco-animate">
+						<h3>Horses</h3>
+					</div>
+					<div class="menus d-flex ftco-animate">
+						<div class="menu-img img" style="background-image: url(/static/images/saddlebred.jpg);"></div>
+						<div class="text">
+							<div class="d-flex">
+								<div class="one-half">
+									<h3>CHARLIE</h3>
+								</div>
+								<div class="one-forth">
+									<span class="price"></span>
+								</div>
+							</div>
+							<p style="text-decoration: underline orange;">
+								<span>S</span><span>A</span><span>D</span><span>D</span><span>L</span><span>E</span><span>B</span><span>R</span><span>E</span><span>D</span>
+							</p>
+						</div>
+					</div>
+					<div class="menus d-flex ftco-animate">
+						<div class="menu-img img" style="background-image: url(/static/images/arabian.jpg);"></div>
+						<div class="text">
+							<div class="d-flex">
+								<div class="one-half">
+									<h3>SNOWBALL</h3>
+								</div>
+								<div class="one-forth">
+									<span class="price"></span>
+								</div>
+							</div>
+							<p style="text-decoration: underline orange;">
+								<span>A</span><span>R</span><span>A</span><span>B</span><span>I</span><span>A</span><span>N
+							</p>
+						</div>
+					</div>
+					<div class="menus d-flex ftco-animate">
+						<div class="menu-img img" style="background-image: url(/static/images/kala\ khatta.jpg);"></div>
+						<div class="text">
+							<div class="d-flex">
+								<div class="one-half">
+									<h3>PONY</h3>
+								</div>
+								<div class="one-forth">
+									<span class="price"></span>
+								</div>
+							</div>
+							<p style="text-decoration: underline orange;">
+								<span>F</span><span>E</span><span>L</span><span>L</span>
+								<span>P</span><span>O</span><span>N<span><span>Y</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb">
+		<div class="container-fluid px-0">
+			<div class="row d-flex no-gutters">
+				<div class="col-md-6 ftco-animate makereservation p-4 p-md-5 pt-5 pt-md-0">
+					<div class="heading-section ftco-animate mb-5">
+						<span class="subheading">Customer</span>
+						<h2 class="mb-4">Add a Review</h2>
+					</div>
+					<form action="#">
+
+						<div class="row">
+					
+							<div class="col-md-6">
+					
+								<div class="form-group">
+					
+									<label for="reviewer_name">Your Name</label>
+					
+									<input type="text" class="form-control" id="reviewer_name" placeholder="Your Name">
+					
+								</div>
+					
+							</div>
+					
+							<div class="col-md-6">
+					
+								<div class="form-group">
+					
+									<label for="reviewer_email">Email</label>
+					
+									<input type="email" class="form-control" id="reviewer_email" placeholder="Your Email">
+					
+								</div>
+					
+							</div>
+					
+							<div class="col-md-12">
+					
+								<div class="form-group">
+					
+									<label for="rating">Rating</label>
+					
+									<div class="select-wrap">
+					
+										<div class="icon"><span class="ion-ios-arrow-down"></span></div>
+					
+										<select name="rating" id="rating" class="form-control">
+					
+											<option value="">Select Rating</option>
+					
+											<option value="5">5 Stars - Excellent</option>
+					
+											<option value="4">4 Stars - Very Good</option>
+					
+											<option value="3">3 Stars - Good</option>
+					
+											<option value="2">2 Stars - Fair</option>
+					
+											<option value="1">1 Star - Poor</option>
+					
+										</select>
+					
+									</div>
+					
+								</div>
+					
+							</div>
+					
+							<div class="col-md-12">
+					
+								<div class="form-group">
+					
+									<label for="review_title">Review Title</label>
+					
+									<input type="text" class="form-control" id="review_title" placeholder="Give your review a title">
+					
+								</div>
+					
+							</div>
+					
+							<div class="col-md-12">
+					
+								<div class="form-group">
+					
+									<label for="review_text">Your Review</label>
+					
+									<textarea class="form-control" id="review_text" rows="5" placeholder="Write your review here..."></textarea>
+					
+								</div>
+					
+							</div>
+					
+							<div class="col-md-12">
+					
+								<div class="form-group">
+					
+									<label for="visit_date">Date of Visit</label>
+					
+									<input type="date" class="form-control" id="visit_date">
+					
+								</div>
+					
+							</div>
+					
+							<div class="col-md-12">
+					
+								<div class="form-group">
+					
+									<a href="{{url_for('appointment' )}}"><button type="submit" class="btn btn-primary" style="align-items: center;">Submit Review</button></a>
+					
+								</div>
+					
+							</div>
+							<!-- <div class="col-md-12 mt-3">
+								<div class="form-group">
+									<a href="{{url_for('appointment' )}}"><input type="submit" value="Book a meet " class="btn btn-primary py-3 px-5"></a>
+								</div>
+							</div> -->
+						</div>
+					</form>
+				</div>
+				<div class="col-md-6 d-flex align-items-stretch pb-5 pb-md-0">
+						<div id="/static/images"> <img src="/static/images/lgo.png" alt="" height="600px" width="600px"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+ 
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-2">
+				<div class="col-md-7 text-center heading-section ftco-animate">
+					<span class="subheading">Veterinary</span>
+					<h2 class="mb-4">Our Team</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-lg-3 ftco-animate">
+					<div class="staff">
+						<div class="img" style="background-image: url(/static/images/v1.jpg);"></div>
+						<div class="text pt-4">
+							<h3>Dr. Emily Barkley</h3>
+							<span class="position mb-2">FELINE VETERINARIAN</span>
+							<p>Medical care of cats, diagnosing and treating various health conditions specific to
+							felines. </p>
+							<div class="faded">
+								<!-- <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p> -->
+								<ul class="ftco-social d-flex">
+									<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+									<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+									<li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
+									<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 ftco-animate">
+					<div class="staff">
+						<div class="img" style="background-image: url(/static/images/uncle.jpg);"></div>
+						<div class="text pt-4">
+							<h3>Dr. Robert Tailor</h3>
+							<span class="position mb-2">EQUINE VETERINARIAN</span>
+							<p>Health and Medical care of horses, providing preventive care, diagnosis specific to
+								Horses.</p>
+							<div class="faded">
+								<!-- <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p> -->
+								<ul class="ftco-social d-flex">
+									<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+									<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+									<li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
+									<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 ftco-animate">
+					<div class="staff">
+						<div class="img" style="background-image: url(/static/images/hilo.jpg);"></div>
+						<div class="text pt-4">
+							<h3>Dr. Daniel Pawmond</h3>
+							<span class="position mb-2">CANINE VETERINARIAN</span>
+							<p>Routine check-ups, vaccinations, dental care and emergency treatments specific to
+								Dogs.</p>
+							<div class="faded">
+								<!-- <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p> -->
+								<ul class="ftco-social d-flex">
+									<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+									<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+									<li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
+									<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 ftco-animate">
+					<div class="staff">
+						<div class="img" style="background-image: url(/static/images/hh.jpg);"></div>
+						<div class="text pt-4">
+							<h3>Dr. Olivia Whiskers</h3>
+							<span class="position mb-2">EXOTIC PET VETERINARIAN</span>
+							<p>Diagnose and treat illnesses, perform surgeries and provide specialized care to exotic animals</p>
+							<div class="faded">
+								<!-- <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p> -->
+								<ul class="ftco-social d-flex">
+									<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+									<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+									<li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
+									<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- <section class="ftco-section testimony-section" style="background-image: url(/static/images/bg_5.jpg);" data-stellar-background-ratio="0.5"> -->
+	<section class="ftco-section testimony-section img" style="background-image: url(/static/images/bg_5.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row justify-content-center mb-5">
+				<div class="col-md-7 text-center heading-section ftco-animate">
+					<span class="subheading">Testimonials</span>
+					<h2 class="mb-4">Customer Reviews</h2>
+				</div>
+			</div>
+			<div class="row ftco-animate justify-content-center">
+				<div class="col-md-12">
+					<div class="carousel-testimony owl-carousel ftco-owl">
+						<div class="item">
+							<div class="testimony-wrap text-center pb-5">
+								<div class="user-img mb-4" style="background-image: url(/static/images/sophia.jpg)">
+									<span class="quote d-flex align-items-center justify-content-center">
+										<i class="icon-quote-left"></i>
+									</span>
+								</div>
+								<div class="text p-3">
+									<p class="mb-4">I had an amazing experience adopting my dog, Bella, through Cuddle
+										Buddy! I loved the detailed profiles of each pet. Bella has brought so much joy
+										to my life, and I’m grateful for the support provided by Cuddle Buddy.</p>
+									<p class="name">Sophia Luthra</p>
+									<span class="position">Customer</span>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap text-center pb-5">
+								<div class="user-img mb-4" style="background-image: url(/static/images/ryan.avif)">
+									<span class="quote d-flex align-items-center justify-content-center">
+										<i class="icon-quote-left"></i>
+									</span>
+								</div>
+								<div class="text p-3">
+									<p class="mb-4">Adopting my cat, Whiskers, was a smooth process thanks to Cuddle
+										Buddy. The staff was friendly and helpful, answering all my questions. Overall,
+										a great experience!.</p>
+									<p class="name">Ryan Benett</p>
+									<span class="position">Customer</span>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap text-center pb-5">
+								<div class="user-img mb-4" style="background-image: url(/static/images/rabb.jpg)">
+									<span class="quote d-flex align-items-center justify-content-center">
+										<i class="icon-quote-left"></i>
+									</span>
+								</div>
+								<div class="text p-3">
+									<p class="mb-4">I found a lovely rabbit on Cuddle Buddy, but the adoption process
+										took longer than I expected. I had to wait a week for my application to be
+										processed, and I didn’t receive updates during that time. </p>
+									<p class="name">Nathan Williams</p>
+									<span class="position">Customer</span>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap text-center pb-5">
+								<div class="user-img mb-4" style="background-image: url(/static/images/man.avif)">
+									<span class="quote d-flex align-items-center justify-content-center">
+										<i class="icon-quote-left"></i>
+									</span>
+								</div>
+								<div class="text p-3">
+									<p class="mb-4">I recently adopted a Bird named Luna from Cuddle Buddy, and it was
+										a wonderful experience! The website made it easy to find her, and the
+										meet-and-greet was well organized. The only downside was that I had to fill out
+										a lengthy application</p>
+									<p class="name">Michael Sanders</p>
+									<span class="position">Customer</span>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap text-center pb-5">
+								<div class="user-img mb-4" style="background-image: url(/static/images/amanda.jpg)">
+									<span class="quote d-flex align-items-center justify-content-center">
+										<i class="icon-quote-left"></i>
+									</span>
+								</div>
+								<div class="text p-3">
+									<p class="mb-4">Cuddle Buddy is fantastic! I adopted a senior dog, Max, and the team
+										was incredibly supportive throughout the process. They provided resources on how
+										to care for an older dog, which was very helpful</p>
+									<p class="name">Amanda Collins</p>
+									<span class="position">Customer</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb">
+		<div class="container-fluid px-0">
+			<div class="row no-gutters">
+				<div class="col-md">
+					<a href="#" class="instagram img d-flex align-items-center justify-content-center"
+						style="background-image: url(/static/images/insta1.webp);">
+						<span class="ion-logo-instagram"></span>
+					</a>
+				</div>
+				<div class="col-md">
+					<a href="#" class="instagram img d-flex align-items-center justify-content-center"
+						style="background-image: url(/static/images/insta2.jpg);">
+						<span class="ion-logo-instagram"></span>
+					</a>
+				</div>
+				<div class="col-md">
+					<a href="#" class="instagram img d-flex align-items-center justify-content-center"
+						style="background-image: url(/static/images/insta3.jpg);">
+						<span class="ion-logo-instagram"></span>
+					</a>
+				</div>
+				<div class="col-md">
+					<a href="#" class="instagram img d-flex align-items-center justify-content-center"
+						style="background-image: url(/static/images/insta4.jpg);">
+						<span class="ion-logo-instagram"></span>
+					</a>
+				</div>
+				<div class="col-md">
+					<a href="#" class="instagram img d-flex align-items-center justify-content-center"
+						style="background-image: url(/static/images/insta5.jpeg);">
+						<span class="ion-logo-instagram"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+
+
+	<!-- loader -->
+	<!-- <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div> -->
+		{% endblock %}
+	</body>
+
+	<script src="/static/js/jquery.min.js"></script>
+	<script src="/static/js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="/static/js/popper.min.js"></script>
+	<script src="/static/js/bootstrap.min.js"></script>
+	<script src="/static/js/jquery.easing.1.3.js"></script>
+	<script src="/static/js/jquery.waypoints.min.js"></script>
+	<script src="/static/js/jquery.stellar.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="/static/js/owl.carousel.min.js"></script>
+	<script src="/static/js/jquery.magnific-popup.min.js"></script>
+	<script src="/static/js/aos.js"></script>
+	<script src="/static/js/jquery.animateNumber.min.js"></script>
+	<script src="/static/js/bootstrap-datepicker.js"></script>
+	<script src="/static/js/jquery.timepicker.min.js"></script>
+	<script src="/static/js/scrollax.min.js"></script>
+	<script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script> -->
+	<script src="static/js/google-map.js"></script>
+	<script src="static/js/main.js"></script>
+	
+<script>
+	// Wait for document to be ready
+ $(document).ready(function(){
+    // Initialize the testimonial carousel
+    let testimonyCarousel = $('.carousel-testimony').owlCarousel({
+        items: 1,
+        loop: true,
+        margin: 30,
+        stagePadding: 0,
+        nav: false,
+        dots: true,
+        autoplay: true,
+        autoplayHoverPause: true,
+        autoplayTimeout: 5000,
+        responsive: {
+            0: { items: 1 },
+            600: { items: 2 },
+            1000: { items: 3 }
+        }
+    });
+
+    // Handle review form submission
+    $("form").on('submit', function(event) {
+        event.preventDefault();
+        
+        // Get form values
+        const name = $("#reviewer_name").val().trim();
+        const email = $("#reviewer_email").val().trim();
+        const rating = $("#rating").val();
+        const title = $("#review_title").val().trim();
+        const review = $("#review_text").val().trim();
+        const visitDate = $("#visit_date").val();
+        
+        // Basic validation
+        if (!name || !email || !rating || !review) {
+            alert("Please fill in all required fields");
+            return false;
+        }
+
+        // Create new testimonial HTML structure
+        const newTestimonial = `
+            <div class="item">
+                <div class="testimony-wrap text-center pb-5">
+                    <div class="user-img mb-4" style="background-image: url('/api/placeholder/150/150')">
+                        <span class="quote d-flex align-items-center justify-content-center">
+                            <i class="icon-quote-left"></i>
+                        </span>
+                    </div>
+                    <div class="text p-3">
+                        <p class="mb-4">${review}</p>
+                        <p class="name">${name}</p>
+                        <span class="position">Customer</span>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        // Add new item to carousel
+        testimonyCarousel.trigger('add.owl.carousel', [$(newTestimonial)])
+                        .trigger('refresh.owl.carousel');
+
+        // Go to the new item
+        setTimeout(() => {
+            let itemCount = testimonyCarousel.find('.owl-item').length;
+            testimonyCarousel.trigger('to.owl.carousel', [itemCount - 1, 300, true]);
+        }, 100);
+
+        // Clear the form
+        this.reset();
+        
+        // Show success message
+        alert("Thank you for your review! It has been added to the testimonials.");
+        
+        return false;
+    });
+});
+</script>
+
+
+</html>

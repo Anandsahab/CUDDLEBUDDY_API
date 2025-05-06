@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Description Layout</title>
+    <style>
+      body {
+        background-color: white;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      .nav-bar {
+        background-color: black;
+        padding: 15px;
+        text-align: center;
+      }
+      .dropdown {
+        padding: 8px;
+        border-radius: 5px;
+        border: none;
+        font-size: 16px;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 60px;
+        max-width: 1200px;
+        margin: auto;
+        margin-top: 20px;
+      }
+      .image-container {
+        /* flex: 1; */
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .image-container img {
+        width: 100%;
+        max-width: 600px;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+      }
+      .image-container:hover img {
+        transform: scale(1.05);
+      }
+      .form-container {
+        flex: 1;
+        text-align: left;
+        /* margin-left: 100px; */
+      }
+      .description-table {
+        width: 700px;
+        margin-top: 20px;
+        border-collapse: collapse;
+      }
+      .description-table th,
+      .description-table td {
+        border: 1px solid #000;
+        padding: 10px;
+        text-align: left;
+      }
+      .description-table th {
+        background-color: black;
+        color: white;
+      }
+      h2 {
+        color: black;
+      }
+      .book-btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background: orange;
+        color: white;
+        text-decoration: none;
+        font-size: 22px;
+        border-radius: 5px;
+        margin-top: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="nav-bar">
+      <select id="animal-select" class="dropdown">
+        <option value="" disabled selected>Pets</option>
+        <option value="dogs">Dogs</option>
+        <option value="cats">Cats</option>
+        <option value="horses">Horses</option>
+        <option value="birds">Birds</option>
+      </select>
+    </div> -->
+    <!-- <div class="image-container">
+      <img src="5insta.jpg" alt="Image" height="500px" />
+    </div> -->
+    <div class="container">
+      <div class="image-container">
+        <img src="/static/images/saddlebred.jpg" alt="Image" height="570px" width="500px" />
+        <h1 style="display: flex; justify-content: center; align-items: center">
+          CHARLIE
+        </h1>
+      </div>
+
+      <div class="form-container">
+        <h2 style="text-align: center">Description</h2>
+        <table class="description-table">
+          <tr>
+            <th>Topic</th>
+            <th class="th1">Details</th>
+          </tr>
+          <tr>
+            <td>Name</td>
+            <td class="th1">American Saddlebred</td>
+          </tr>
+          <tr>
+            <td>Size</td>
+            <td>
+              Height: 15–17 hands (60–68 inches / 152–173 cm) <br />
+              Weight: 1,000–1,200 lbs (450–540 kg)
+            </td>
+          </tr>
+          <tr>
+            <td>Lifespan</td>
+            <td>25–30 years (with proper care)</td>
+          </tr>
+          <tr>
+            <td>Temperament</td>
+            <td>
+              Intelligent & Quick-Learning – Highly trainable and eager to
+              please <br />
+              Energetic & Spirited – Known for their high-stepping gait and
+              lively personality <br />
+              Gentle & Affectionate – Friendly with handlers and enjoys human
+              interaction <br />
+              Brave & Confident – Adaptable and performs well in various
+              disciplines
+            </td>
+          </tr>
+          <tr>
+            <td>Color and Appearance</td>
+            <td>
+              Common Colors: Bay, Chestnut, Black, Gray, Palomino, and Pinto
+              <br />
+              Elegant Features: <br />
+              Long, arched neck with a refined head <br />
+              Well-defined, muscular body <br />
+              High tail carriage and graceful movement
+            </td>
+          </tr>
+          <tr>
+            <td>Child Friendly</td>
+            <td>
+              Yes, for experienced young riders – They are friendly but best
+              suited for those with riding experience due to their energy.
+            </td>
+          </tr>
+
+          <tr>
+            <td>Common Health Issues</td>
+            <td>
+              Laminitis – Hoof inflammation if not managed properly <br />
+              Joint & Tendon Issues – Due to high-stepping gaits and intensive
+              training <br />
+              Respiratory Problems – Can be prone to conditions like heaves if
+              kept in dusty environments
+
+              <tr>
+                <td>Trainability</td>
+                <td>
+                  Highly trainable – Excels in saddle seat riding, dressage, and
+                  driving <br />
+                  Versatile & Responsive – Used for show rings, pleasure riding,
+                  and even jumping
+                </td>
+              </tr>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Overview</td>
+            <td>
+              The American Saddlebred is often called the "Peacock of the Horse
+              World" because of its graceful, high-stepping movement and
+              striking presence. Developed in the U.S., it is popular for show
+              competitions, pleasure riding, and parades. With its intelligence,
+              elegance, and versatility, this breed is a favorite among
+              equestrians.
+            </td>
+          </tr>
+        </table>
+
+        <a href="#" class="book-btn">Adopt Now</a>
+      </div>
+    </div>
+  </body>
+</html>

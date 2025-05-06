@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Description Layout</title>
+    <style>
+      body {
+        background-color: white;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      .nav-bar {
+        background-color: black;
+        padding: 15px;
+        text-align: center;
+      }
+      .dropdown {
+        padding: 8px;
+        border-radius: 5px;
+        border: none;
+        font-size: 16px;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 60px;
+        max-width: 1200px;
+        margin: auto;
+        margin-top: 20px;
+      }
+      .image-container {
+        /* flex: 1; */
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .image-container img {
+        width: 100%;
+        max-width: 600px;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+      }
+      .image-container:hover img {
+        transform: scale(1.05);
+      }
+      .form-container {
+        flex: 1;
+        text-align: left;
+        /* margin-left: 100px; */
+      }
+      .description-table {
+        width: 700px;
+        margin-top: 20px;
+        border-collapse: collapse;
+      }
+      .description-table th,
+      .description-table td {
+        border: 1px solid #000;
+        padding: 10px;
+        text-align: left;
+      }
+      .description-table th {
+        background-color: black;
+        color: white;
+      }
+      h2 {
+        color: black;
+      }
+      .book-btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background: orange;
+        color: white;
+        text-decoration: none;
+        font-size: 22px;
+        border-radius: 5px;
+        margin-top: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="nav-bar">
+      <select id="animal-select" class="dropdown">
+        <option value="" disabled selected>Pets</option>
+        <option value="dogs">Dogs</option>
+        <option value="cats">Cats</option>
+        <option value="horses">Horses</option>
+        <option value="birds">Birds</option>
+      </select>
+    </div> -->
+    <!-- <div class="image-container">
+      <img src="5insta.jpg" alt="Image" height="500px" />
+    </div> -->
+    <div class="container">
+      <div class="image-container">
+        <img src="/static/images/owl.jpg" alt="Image" height="570px" width="500px" />
+        <h1 style="display: flex; justify-content: center; align-items: center">
+          COPPER
+        </h1>
+      </div>
+
+      <div class="form-container">
+        <h2 style="text-align: center">Description</h2>
+        <table class="description-table">
+          <tr>
+            <th>Topic</th>
+            <th class="th1">Details</th>
+          </tr>
+          <tr>
+            <td>Name</td>
+            <td class="th1">Owl</td>
+          </tr>
+          <tr>
+            <td>Size</td>
+            <td>
+              Varies by species <br />
+              Smallest: Elf Owl <br />
+              Largest: Blakiston's Fish Owl
+            </td>
+          </tr>
+          <tr>
+            <td>Lifespan</td>
+            <td>5-30 years</td>
+          </tr>
+          <tr>
+            <td>Temperament</td>
+            <td>
+              Solitary & Nocturnal - Most owls prefer to live and hunt alone at
+              night <br />
+              Silent & Stealthy - Specialized feathers allow them to fly without
+              making noise <br />
+              Intelligent & Observant - Keen eyesight and hearing help them hunt
+              efficiently <br />
+              Territorial & Protective- Defends their nests fiercely, especially
+              during breeding season
+            </td>
+          </tr>
+          <tr>
+            <td>Color and Appearance</td>
+            <td>
+              Camouflaged feathers (brown, gray, white, or black patterns)
+              <br />
+              Large round head with forward-facing eyes <br />
+              Sharp talons & hooked beak for catching prey <br />
+              Facial disc helps direct sound to their ears for enhanced hearing
+              <br />
+            </td>
+          </tr>
+          <tr>
+            <td>Child Friendly</td>
+            <td>
+              Not suitable as pets - Owls are wild birds and require specialized
+              care.
+            </td>
+          </tr>
+          <tr>
+            <td>Health and Survival Issues</td>
+            <td>
+              Habitat loss due to deforestation <br />
+              Poisoning from pesticides and rodenticides <br />
+              Illegal pet trade (owls should not be kept as pets in most places)
+              <tr>
+                <td>Trainability</td>
+                <td>
+                  Trained in Falconry - Some owls, like the Barn Owl, can be
+                  trained for hunting, but they require expert care.
+                </td>
+              </tr>
+            </td>
+          </tr>
+          <tr>
+            <td>Overview</td>
+            <td>
+              Owls are mysterious and fascinating birds of prey known for their
+              silent flight, sharp vision, and nocturnal hunting skills. They
+              play a crucial role in the ecosystem by controlling rodent
+              populations. While they are admired worldwide, they are best
+              observed in the wild rather than as pets.
+            </td>
+          </tr>
+        </table>
+
+        <a href="#" class="book-btn">Adopt Now</a>
+      </div>
+    </div>
+  </body>
+</html>

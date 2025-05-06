@@ -1,0 +1,111 @@
+Custom styles for Pet Store
+.product-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card .card-body {
+    padding: 1.25rem;
+}
+
+.product-card .card-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-card .card-text {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.product-card .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4a90e2;
+}
+
+.category-sidebar {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.category-sidebar h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.category-sidebar ul li {
+    margin-bottom: 0.5rem;
+}
+
+.category-sidebar ul li a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.category-sidebar ul li a:hover {
+    color: #4a90e2;
+}
+
+.category-sidebar ul li.fw-bold a {
+    color: #4a90e2;
+}
+
+/* Product detail page styles */
+.product-detail img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.product-detail h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.product-detail .price {
+    font-size: 1.5rem;
+    color: #4a90e2;
+    margin-bottom: 1rem;
+}
+
+.product-detail .description {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Review section styles */
+.review-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.review-card .rating {
+    color: #ffc107;
+    font-weight: bold;
+}
+
+.review-card .date {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.review-card .comment {
+    margin-top: 0.5rem;
+    color: #666;
+} 

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Cuddle Buddy</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Miss+Fajardose&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/static/css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="/static/css/animate.css">
+  <link rel="stylesheet" href="/static/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="/static/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="/static/css/magnific-popup.css">
+  <link rel="stylesheet" href="/static/css/aos.css">
+  <link rel="stylesheet" href="/static/css/ionicons.min.css">
+  <link rel="stylesheet" href="/static/css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="/static/css/jquery.timepicker.css">
+  <link rel="stylesheet" href="/static/css/flaticon.css">
+  <link rel="stylesheet" href="/static/css/icomoon.css">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="icon" href="/static/images/lgo.png" type="image/png">
+</head>
+
+<body>
+  
+  {% extends 'base.html' %}
+  {% block content %}
+
+  
+  <section class="hero-wrap hero-wrap-2" style="background-image: url('/static/images/cb.jpg');"
+    data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text align-items-end justify-content-center">
+        <div class="col-md-9 ftco-animate text-center">
+          <h1 class="mb-2 bread">Contact Us</h1>
+          <p class="breadcrumbs"><span class="mr-2"><a href="{{ url_for('index') }}">Home <i
+                  class="ion-ios-arrow-forward"></i></a></span> <span>Contact <i
+                class="ion-ios-arrow-forward"></i></span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section contact-section bg-light">
+    <div class="container">
+      <div class="row d-flex contact-info">
+        <div class="col-md-12 mb-4">
+          <h2 class="h4 font-weight-bold">Contact Information</h2>
+        </div>
+        <div class="w-100"></div>
+        <div class="col-md-3 d-flex">
+          <div class="dbox">
+            <p><span>Address:</span> Chitkara University, Rajpura(140401)</p>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex">
+          <div class="dbox">
+            <p><span>Phone:</span> <a href="tel://1234567920">+91 9876543210</a></p>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex">
+          <div class="dbox">
+            <p><span>Email:</span> <a href="mailto:info@yoursite.com">@chitkara.edu.in</a></p>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex">
+          <div class="dbox">
+            <p><span>Website</span> <a href="index.html">Cuddle Buddy</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="ftco-section ftco-no-pt ftco-no-pb contact-section">
+    <div class="container">
+      <div class="row d-flex align-items-stretch no-gutters">
+        <div class="col-md-6 d-flex align-items-stretch pb-5 pb-md-0">
+          <div id="/static/images">
+            <img src="/static/images/contactus.jpg" alt="" height="600px" width="600px">
+          </div>
+        </div>
+        <div class="col-md-6 p-5 order-md-last">
+          <h2 class="h4 mb-5 font-weight-bold">Contact Us</h2>
+          {% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+  <div class="flash-messages">
+    {% for category, message in messages %}
+    <div class="alert alert-{{ category }}">{{ message }}</div>
+    {% endfor %}
+  </div>
+  {% endif %}
+  {% endwith %}
+          <form action="{{ url_for('send_message') }}" method="POST">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Your Name" name="name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Your Email" name="email" required>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Subject" name="subject" required>
+            </div>
+            <div class="form-group">
+              <textarea cols="30" rows="7" class="form-control" placeholder="Message" name="message"
+                required></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="ftco-section ftco-no-pt ftco-no-pb">
+    <div class="container-fluid px-0">
+      <div class="row no-gutters">
+        <div class="col-md">
+          <a href="#" class="instagram img d-flex align-items-center justify-content-center"
+            style="background-image: url(/static/images/dog1);">
+            <span class="ion-logo-instagram"></span>
+          </a>
+        </div>
+        <div class="col-md">
+          <a href="#" class="instagram img d-flex align-items-center justify-content-center"
+            style="background-image: url(/static/images/insta-2.jpg);">
+            <span class="ion-logo-instagram"></span>
+          </a>
+        </div>
+        <div class="col-md">
+          <a href="#" class="instagram img d-flex align-items-center justify-content-center"
+            style="background-image: url(/static/images/insta-3.jpg);">
+            <span class="ion-logo-instagram"></span>
+          </a>
+        </div>
+        <div class="col-md">
+          <a href="#" class="instagram img d-flex align-items-center justify-content-center"
+            style="background-image: url(/static/images/insta-4.jpg);">
+            <span class="ion-logo-instagram"></span>
+          </a>
+        </div>
+        <div class="col-md">
+          <a href="#" class="instagram img d-flex align-items-center justify-content-center"
+            style="background-image: url(/static//static/images/insta-5.jpg);">
+            <span class="ion-logo-instagram"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endblock %}
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#F96D00" />
+    </svg></div>
+
+
+  <script src="/static/js/jquery.min.js"></script>
+  <script src="/static/js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="/static/js/popper.min.js"></script>
+  <script src="/static/js/bootstrap.min.js"></script>
+  <script src="/static/js/jquery.easing.1.3.js"></script>
+  <script src="/static/js/jquery.waypoints.min.js"></script>
+  <script src="/static/js/jquery.stellar.min.js"></script>
+  <script src="/static/js/owl.carousel.min.js"></script>
+  <script src="/static/js/jquery.magnific-popup.min.js"></script>
+  <script src="/static/js/aos.js"></script>
+  <script src="/static/js/jquery.animateNumber.min.js"></script>
+  <script src="/static/js/bootstrap-datepicker.js"></script>
+  <script src="/static/js/jquery.timepicker.min.js"></script>
+  <script src="/static/js/scrollax.min.js"></script>
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script> -->
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

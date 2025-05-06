@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cuddle Buddy</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Miss+Fajardose&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="/static/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/animate.css">
+    <link rel="stylesheet" href="/static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/static/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/static/css/magnific-popup.css">
+    <link rel="stylesheet" href="/static/css/aos.css">
+    <link rel="stylesheet" href="/static/css/ionicons.min.css">
+    <link rel="stylesheet" href="/static/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="/static/css/jquery.timepicker.css">
+    <link rel="stylesheet" href="/static/css/flaticon.css">
+    <link rel="stylesheet" href="/static/css/icomoon.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+	<link rel="icon" href="/static/images/lgo.png" type="image/png">
+  </head>
+  <body>
+	{% extends 'base.html' %}
+	{% block content %}
+    
+   
+    
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('/static/images/app.webp');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-end justify-content-center">
+          <div class="col-md-9 ftco-animate text-center">
+            <h1 class="mb-2 bread">APPOINTMENT</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="{{url_for('index')}}">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Appointment <i class="ion-ios-arrow-forward"></i></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+	{% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+  <div class="flash-messages">
+    {% for category, message in messages %}
+    <div class="alert alert-{{ category }}">{{ message }}</div>
+    {% endfor %}
+  </div>
+  {% endif %}
+  {% endwith %}
+	
+		<section class="ftco-section ftco-no-pt ftco-no-pb">
+			<div class="container-fluid px-0">
+				<div class="row d-flex no-gutters">
+          <div class="col-md-6 order-md-last ftco-animate makereservation p-4 p-md-5 pt-5">
+          	<div class="py-md-5">
+	          	<div class="heading-section ftco-animate mb-5">
+		          	<span class="subheading">Book Appointment</span>
+		            <h2 class="mb-4">Make Meet</h2>
+		          </div>
+	            <form action="{{ url_for('book_appointment') }}" method="POST">
+	              <div class="row">
+	                <div class="col-md-6">
+	                  <div class="form-group">
+	                    <label for="">Name</label>
+	                    <input type="text" class="form-control" placeholder="Your Name" name="name">
+	                  </div>
+	                </div>
+	                <div class="col-md-6">
+	                  <div class="form-group">
+	                    <label for="">Email</label>
+	                    <input type="email" class="form-control" placeholder="Your Email" name="email">
+	                  </div>
+	                </div>
+	                <div class="col-md-6">
+	                  <div class="form-group">
+	                    <label for="">Phone</label>
+	                    <input type="tel" class="form-control" placeholder="Phone" name="phone">
+	                  </div>
+	                </div>
+	                <div class="col-md-6">
+	                  <div class="form-group">
+	                    <label for="">Date</label>
+	                    <input type="date"  name="date" placeholder="Date">
+	                  </div>
+	                </div>
+	                <div class="col-md-6">
+	                  <div class="form-group">
+	                    <label for="">Time</label>
+	                    <input type="time"  placeholder="Time" name="time">
+	                  </div>
+	                </div>
+	                <div class="col-md-6">
+	                  <div class="form-group">
+	                    <label for="">Person</label>
+	                    <div class="select-wrap one-third">
+	                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+	                      <select type="number" class="form-control" name="persons" required>
+	                        <option value="">Select number of Person</option>
+	                        <option value="1">1</option>
+	                        <option value="2">2</option>
+	                        <option value="3">3</option>
+	                        <option value="4">4</option>
+	                      </select>
+	                    </div>
+	                  </div>
+	                </div>
+	                <div class="col-md-12 mt-3">
+	                  <div class="form-group">
+	                    <a href="/templates/appointment.html"><input type="submit"  value="Book a meet" class="btn btn-primary py-3 px-5"></a>
+	                  </div>
+	                </div>
+	              </div>
+	            </form>
+	          </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch pb-5 pb-md-0">
+						<div id="images"><img src="/static/images/lgo.png" alt="" height="600px" width="600px"></div>
+					</div>
+        </div>
+		
+			</div>
+		</section>
+
+{% endblock %}
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="/static/js/jquery.min.js"></script>
+  <script src="/static/js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="/static/js/popper.min.js"></script>
+  <script src="/static/js/bootstrap.min.js"></script>
+  <script src="/static/js/jquery.easing.1.3.js"></script>
+  <script src="/static/js/jquery.waypoints.min.js"></script>
+  <script src="/static/js/jquery.stellar.min.js"></script>
+  <script src="/static/js/owl.carousel.min.js"></script>
+  <script src="/static/js/jquery.magnific-popup.min.js"></script>
+  <script src="/static/js/aos.js"></script>
+  <script src="/static/js/jquery.animateNumber.min.js"></script>
+  <script src="/static/js/bootstrap-datepicker.js"></script>
+  <script src="/static/js/jquery.timepicker.min.js"></script>
+  <script src="/static/js/scrollax.min.js"></script>
+  <script src="/static/js/google-map.js"></script>
+  <script src="/static/js/main.js"></script>
+    
+  </body>
+</html>
+
