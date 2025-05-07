@@ -1,27 +1,64 @@
-🐾 Cuddle Buddy - Pet Adoption Platform
-Cuddle Buddy is a Django-based web application that connects pet lovers with pets looking for a home. Users can adopt pets, list their own pets for rehoming, book appointments, and manage their profiles — all through a seamless, user-friendly interface.
+🐾 CUDDLE BUDDY – Pet Service Management System
+CUDDLE BUDDY is a comprehensive full-stack web application developed to streamline the management of pet appointments, service bookings, and order processing. Designed with pet service businesses in mind, it leverages the power of Flask 🐍 for backend development and Django 🎯 for frontend administration, creating a seamless and scalable solution for both users and administrators.
 
-🚀 Features
-🐶 Browse Pets: View pets available for adoption with filters by type, age, and location.
+✨ Key Features
+🔐 User Registration & Login with Role Management
+Supports secure user authentication with two distinct roles:
 
-🏠 Rehoming System: Let users upload their pets for rehoming with images and details.
+Admin 👩‍💼 / 👨‍💼: Full access to all system data and administrative controls
 
-📅 Appointment Booking: Users can book appointments to meet pets before adoption.
+Regular User 🧑‍🤝‍🧑: Can book appointments, services, and manage orders
 
-👤 User Profiles: Each user has a personal dashboard to view their bookings, orders, and listed pets.
+📅 Book & Manage Appointments
+Users can conveniently schedule appointments for their pets, while admins can view, update, and manage these appointments in real time.
 
-📨 Email Confirmations: Confirmation emails sent upon successful appointment booking.
+🛁 Pet Service Bookings
+Provides an interface to browse and book various pet-related services such as grooming, training, or vet consultations.
 
-🌙 Dark Mode Support: Clean, responsive design with a dark-themed layout.
+📦 Order Management System
+Users can place, view, and cancel product or service orders. Admins oversee and manage the fulfillment and status of all orders.
 
-🛠 Tech Stack
-Backend: Django (Python)
+📊 Admin Dashboard
+A powerful Django-based dashboard offering visibility and control over all key components, including users, services, appointments, and transactions.
 
-Frontend: HTML, SCSS (Sassy CSS), JavaScript
+🔗 RESTful API Endpoints
+Clean, modular API endpoints built with Flask to ensure seamless integration and efficient data communication between frontend and backend.
 
-Database: SQLite (development)
+🔐 Secure Authentication & Session Management
+Incorporates Flask-Login for session control and Werkzeug for password hashing, ensuring data privacy and user security.
 
-Email Service: Django Email Backend (console/email service)
+🌐 CORS Protection
+Configured to enable secure communication across origins, safeguarding the platform during cross-domain interactions.
 
-Authentication: Django built-in auth system
+🧰 Technology Stack
+🧠 Backend:
+
+Flask (API development)
+
+SQLAlchemy (ORM)
+
+SQLite (Lightweight database)
+
+🎨 Frontend & Admin Panel:
+
+Django (Frontend templating and admin interface)
+
+HTML, CSS, JavaScript
+
+Bootstrap (Responsive UI design)
+
+🔐 Authentication & Security:
+
+Flask-Login
+
+Werkzeug (Password encryption)
+
+🛠️ Additional Tools:
+
+Jinja2 (Flask templating)
+
+CORS Middleware
+
+🐶 Why Choose CUDDLE BUDDY?
+Whether you're a pet clinic, grooming salon, or a multi-service pet care business, CUDDLE BUDDY offers a user-friendly and professional-grade solution to manage daily operations, improve customer service, and ensure pets get the care they deserve—all through one intuitive platform.
 
